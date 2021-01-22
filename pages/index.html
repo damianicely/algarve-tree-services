@@ -28,41 +28,66 @@
     <link href="assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
     <link href="assets/lib/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/lib/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.css" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet">
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-sparrow">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/logo/blacklogo.gif" alt="sparrow" height="35" /> Algarve Tree Services
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown1" aria-controls="navbarNavDropdown1" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown1">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
-                <a class="dropdown-item" href="index.html">Top Menu</a>
-                <a class="dropdown-item" href="split.html">Side Menu</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#quote">Contact</a>
-            </li>
-          </ul>
+  <body class="has-sidemenu overflow-hidden-x">
+
+    <!--===============================================-->
+    <!--    Fancynav-->
+    <!--===============================================-->
+    <nav class="fancynavbar" data-zanim-lg='{"from":{"opacity":1,"x":70},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}' data-zanim-xs='{"from":{"opacity":1,"y":-43},"to":{"opacity":1,"y":0},"ease":"CubicBezier","duration":0.8,"delay":0.3}'
+      data-zanim-trigger="scroll" data-exclusive="true">
+      <div class="fancynavbar-togglerbar bg-danger" data-onscroll-fade-in="data-onscroll-fade-in">
+        <a class="fancynavbar-brand" href="index.html">
+          <img class="fancynavbar-brand-img" src="assets/img/logo/blacklogo.gif" alt="" width="40" height="40" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll"
+          />
+          <!--You can use icon or text logo as well-->
+          <!--<span class='fab fa-superpowers fs-3'></span>-->
+          <!--<span class='logo-sparrow'>S</span>--></a>
+        <div class="fancynavbar-toggler">
+          <svg class="fancynavbar-toggler-icon" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.5}' data-zanim-trigger="scroll">
+            <path id="path-top" d="M20,25c0,0,22,0,30,0c16,0,18.89,40.71-.15,21.75C38.7,35.65,19.9,16.8,19.9,16.8"></path>
+            <path id="path-middle" d="M20,32h30"></path>
+            <path id="path-bottom" d="M19.9,46.98c0,0,18.8-18.85,29.95-29.95C68.89-1.92,66,38.78,50,38.78c-8,0-30,0-30,0"></path>
+          </svg>
+        </div>
+        <div class="fancynavbar-addon" data-zanim-lg='{"from":{"opacity":1,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}' data-zanim-trigger="scroll">
+          <a class="fancynavbar-addon-item" href="https://www.facebook.com/algarvetreeservices"><span class="fab fa-facebook"></span></a>
+          <a class="fancynavbar-addon-item" href="#languageModal" data-toggle="modal"><span class="text-sans-serif ls font-weight-black fs--1 d-block">EN</span></a>
         </div>
       </div>
+      <div class="fancynavbar-collapse">
+        <ul class="fancynavbar-nav">
+          <li class="fancynav-item fancy-dropdown">
+            <a class="fancynav-link fancy-dropdown-toggle" href="JavaScript:void(0)"><span class="fancynav-link-content">homes</span></a>
+            <div class="fancy-dropdown-menu">
+              <div class="row pb-4 pt-3">
+                <div class="col-auto">
+                  <a class="fancy-dropdown-item" href="index.html">Top Menu</a>
+                  <a class="fancy-dropdown-item" href="split.html">Side Menu</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="fancynav-item">
+            <a class="fancynav-link" href="services.html"><span class="fancynav-link-content">services</span></a>
+          </li>
+          <li class="fancynav-item">
+            <a class="fancynav-link" href="gallery.html"><span class="fancynav-link-content">gallery</span></a>
+          </li>
+          <li class="fancynav-item">
+            <a class="fancynav-link" href="#quote"><span class="fancynav-link-content">contact</span></a>
+          </li>
+        </ul>
+      </div>
     </nav>
+    <!--===============================================-->
+    <!--    End of Fancynav-->
+    <!--===============================================-->
+
+
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
@@ -85,32 +110,45 @@
       <!-- End of Preloader ===========================-->
 
       <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-0 overflow-hidden" id="digital-header">
-        <div class="bg-holder overlay digital-header" style="background-image:url(assets/img/headers/header-digital.jpg);" data-zanim-xs='{"delay":0,"animation":"zoom-out"}' data-zanim-trigger="scroll"></div>
-        <!--/.bg-holder-->
-        <div class="container">
-          <div class="row min-vh-100 align-items-center py-8 justify-content-center text-center">
-            <div class="col-lg-8 col-xl-7" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-              <h1 class="fs-3 fs-sm-4 fs-md-5 text-white parallax display-4" data-rellax-speed="4"><span class="overflow-hidden d-block"><span class="d-inline-block font-weight-black" data-zanim-xs='{"delay":0.1}'>For all tree work in the Algarve and Southern Alentejo.</span></span>
-                
-              </h1>
-              <div class="overflow-hidden parallax" data-rellax-speed="3">
-                <h3 class="mt-3 mt-sm-4 mt-md-5 mb-4 text-300 font-weight-normal" data-zanim-xs='{"delay":0.4}'>first owner-operated and supervised specialist arboricultural company serving the whole of the Algarve
-                  </h3>
+      <!-- LANDING ====================================-->
+      <section class="py-0" id="landing-header">
+        <div class="container-fluid">
+          <div class="row" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+            <div class="col-lg-6 px-0">
+              <div class="h-100 py-9" data-zanim-lg='{"animation":"slide-right","from":{"opacity":1},"delay":0.4}' data-zanim-trigger="scroll">
+                <div class="bg-holder" style="background-image:url(assets/img/damian/gallery/Chip2.jpg);" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"slide-right","delay":0}'></div>
+                <!-- <div class="bg-holder" style="background-image:url(assets/img/headers/header-digital.jpg);" data-zanim-trigger="scroll" data-zanim-lg='{"animation":"slide-right","delay":0}'></div> -->
+                <!--/.bg-holder-->
               </div>
-              <div class="parallax" data-rellax-speed="2">
-                <div data-zanim-xs='{"delay":0.5}'>
-                  <a class="btn btn-danger rounded-capsule" href="#quote">request a free quote</a>
+            </div>
+            <div class="col-lg-6">
+              <div class="row align-items-center justify-content-center py-6 py-md-8">
+                <div class="col-11 col-sm-10">
+                  <div class="overflow-hidden">
+                    <h2 class="font-weight-light text-uppercase fs-3 fs-lg-4" data-zanim-lg='{"delay":0.4}'>Algarve Tree Services</h2>
+                  </div>
+                  <div class="overflow-hidden">
+                    <p class="lead text-sans-serif font-weight-normal pr-xl-9 mt-4 text-500" data-zanim-lg='{"delay":0.5}'>
+                        specialist arboricultural company<br>
+                        serving the whole of the Algarve 
+                    </p>
+                  </div>
+                  <div class="overflow-hidden">
+                    <div class="mt-3 mt-lg-5" data-zanim-xs='{"delay":0.6}'>
+                      <a class="btn btn-danger" href="#quote">request a free quote</a>
+                      <h6 class="font-weight-normal mt-2 text-500">Who are we?
+                        <a class="text-900 font-weight-bold ml-1" href="#aboutus">about us<span class="d-inline-block ml-1">&xrarr;</span></a>
+                      </h6>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <a class="indicator indicator-down" data-zanim-timeline='{"delay":1}' data-zanim-trigger="scroll" href="#target-down" data-fancyscroll="data-fancyscroll" data-offset="60"><span class="indicator-arrow indicator-arrow-one" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.25}'></span><span class="indicator-arrow indicator-arrow-two" data-zanim-xs='{"from":{"opacity":0,"y":15},"to":{"opacity":1,"y":-5,"scale":1},"ease":"Back.easeOut","duration":0.4,"delay":0.5}'></span></a>
         </div>
         <!-- end of .container-->
       </section>
-      <!-- <section> close ============================-->
+      <!-- LANDING close ==============================-->
       <!-- ============================================-->
 
       <div id="target-down"></div>
@@ -170,7 +208,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="border-top border-bottom border-300 bg-light" id="digital-about">
+      <section class="border-top border-bottom border-300 bg-light" id="aboutus">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-4">
@@ -186,7 +224,7 @@
               
               <div class="row mt-4">
                 <div class="col-lg-4">
-                  <div class="media align-items-center mt-3"><img class="mr-3" src="assets/img/icons/fire.svg" alt="icon" width="40"/>
+                  <div class="media align-items-center mt-3"><img class="mr-3" src="assets/img/icons/fire-c.svg" alt="icon" width="40"/>
                     <div class="media-body">
                       <h5 class="mb-0 font-weight-bold text-900">Reduce your fire risk</h5>
                     </div>
@@ -207,7 +245,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn-outline-danger mt-6" href="#quote">&xrarr; learn more about us</a>
+              <a class="btn btn-outline-danger mt-6" href="services.html">&xrarr; Services</a>
             </div>
           </div>
         </div>
@@ -219,7 +257,7 @@
 
 
       <!-- ============================================-->
-      <!-- <section> begin ============================-->
+      <!-- ADVERT =====================================-->
         <section class="py-0" id="default-cta-1">
           <div class="container">
             <div class="position-absolute overflow-hidden a-0">
@@ -236,41 +274,38 @@
           </div>
           <!-- end of .container-->
         </section>
-        <!-- <section> close ============================-->
+        <!-- ADVERT close ===============================-->
         <!-- ============================================-->
   
   
   
       <!-- ============================================-->
-      <!-- <section> begin ============================-->
+      <!-- CREW =======================================-->
         <section class="text-center" id="default-members">
           <div class="container">
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-7 col-xl-6">
                 <h2 class="fs-3 fs-sm-4 text-underline mb-3">meet the crew</h2>
-                <p class="text-500 font-italic">A passionate team of professional tree surgeons. Clicking the photos could open a short profile page about each team member with links to their facebook or instagram accounts.</p>
+                <p class="text-500 font-italic">A passionate team of professional tree surgeons, groundsman and mangers.</p>
               </div>
               <div class="w-100"></div>
-              <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.2}' data-zanim-trigger="scroll">
+              <div class="col-sm-6 col-lg-4 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.2}' data-zanim-trigger="scroll">
                 <div class="hoverbox">
-                  <img class="rounded img-fluid" src="assets/img/team/team2.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
+                  <img class="rounded img-fluid" src="assets/img/team/tiffany.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
                   <div class="hoverbox-content p-3">
                     <div class="d-flex align-items-end justify-content-end h-100">
-                      <a class="text-white" href="#"><span class="fs-1 ml-2 fab fa-twitter"></span></a>
-                      <a class="text-white" href="#"><span class="fs-1 ml-2 fab fa-facebook"></span></a>
+                      <a class="text-white" href="https://www.facebook.com/tiffany.nazar.1"><span class="fs-1 ml-2 fab fa-facebook"></span></a>
                     </div>
                   </div>
                 </div>
                 <div class="overflow-hidden">
-                  <a href="#">
-                    <h5 class="fs-0 font-weight-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Hector Barbossa</h5>
-                  </a>
+                    <h5 class="fs-0 font-weight-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Tiffany Nazar</h5>
                 </div>
                 <div class="overflow-hidden">
-                  <h6 class="text-700 font-weight-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Beta</h6>
+                  <h6 class="text-700 font-weight-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>Owner Manager - Tree Inspector</h6>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.3}' data-zanim-trigger="scroll">
+              <div class="col-sm-6 col-lg-4 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.3}' data-zanim-trigger="scroll">
                 <div class="hoverbox">
                   <img class="rounded img-fluid" src="assets/img/team/team5.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
                   <div class="hoverbox-content p-3">
@@ -280,17 +315,15 @@
                   </div>
                 </div>
                 <div class="overflow-hidden">
-                  <a href="#">
-                    <h5 class="fs-0 font-weight-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Tia Dalma</h5>
-                  </a>
+                    <h5 class="fs-0 font-weight-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Ben Stobert</h5>
                 </div>
                 <div class="overflow-hidden">
-                  <h6 class="text-700 font-weight-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Gama</h6>
+                  <h6 class="text-700 font-weight-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>Arborist</h6>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.4}' data-zanim-trigger="scroll">
+              <div class="col-sm-6 col-lg-4 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.4}' data-zanim-trigger="scroll">
                 <div class="hoverbox">
-                  <img class="rounded img-fluid" src="assets/img/team/team8.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
+                  <img class="rounded img-fluid" src="assets/img/team/bryn.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
                   <div class="hoverbox-content p-3">
                     <div class="d-flex align-items-end justify-content-end h-100">
                       <a class="text-white" href="#"><span class="fs-1 ml-2 fab fa-linkedin"></span></a>
@@ -298,15 +331,13 @@
                   </div>
                 </div>
                 <div class="overflow-hidden">
-                  <a href="#">
-                    <h5 class="fs-0 font-weight-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Angel Syrena</h5>
-                  </a>
+                    <h5 class="fs-0 font-weight-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Bryn Danson</h5>
                 </div>
                 <div class="overflow-hidden">
-                  <h6 class="text-700 font-weight-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Ohm</h6>
+                  <h6 class="text-700 font-weight-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>Driver and Groundsman</h6>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-3 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.5}' data-zanim-trigger="scroll">
+              <div class="col-sm-6 col-lg-4 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.5}' data-zanim-trigger="scroll">
                 <div class="hoverbox">
                   <img class="rounded img-fluid" src="assets/img/team/team4.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
                   <div class="hoverbox-content p-3">
@@ -316,17 +347,36 @@
                   </div>
                 </div>
                 <div class="overflow-hidden">
-                  <a href="#">
-                    <h5 class="fs-0 font-weight-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Joshame Gibbs</h5>
-                  </a>
+                    <h5 class="fs-0 font-weight-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Rui</h5>
                 </div>
                 <div class="overflow-hidden">
-                  <h6 class="text-700 font-weight-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>The Pi</h6>
+                  <h6 class="text-700 font-weight-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>Groundsman Apprentice Climber</h6>
                 </div>
               </div>
-            </div>
+              <div class="col-sm-6 col-lg-4 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.5}' data-zanim-trigger="scroll">
+                <div class="hoverbox">
+                  <img class="rounded img-fluid" src="assets/img/team/sonia.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="fs-0 font-weight-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Sonia Ferro</h5>
+                </div>
+                <div class="overflow-hidden">
+                  <h6 class="text-700 font-weight-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>Administrative Coordinator</h6>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 pt-5 pt-xl-7" data-zanim-timeline='{"delay":0.5}' data-zanim-trigger="scroll">
+                <div class="hoverbox">
+                  <img class="rounded img-fluid" src="assets/img/team/maria.jpg" alt="" data-zanim-xs='{"animation":"zoom-in","delay":0.1}' />
+                </div>
+                <div class="overflow-hidden">
+                    <h5 class="fs-0 font-weight-bold mt-3 mb-1" data-zanim-xs='{"from":{"y":45},"delay":0.2}'>Maria Dolores</h5>
+                </div>
+                <div class="overflow-hidden">
+                  <h6 class="text-700 font-weight-normal text-uppercase ls" data-zanim-xs='{"from":{"y":22},"delay":0.3}'>Accountancy</h6>
+                </div>
+              </div>
           </div>
-          <!-- end of .container-->
+            <!-- end of .container-->
         </section>
         <!-- <section> close ============================-->
         <!-- ============================================-->
@@ -334,50 +384,99 @@
 
 
       <!-- ============================================-->
-      <!-- <section> begin ============================-->
+      <!-- CONTACT FORM ===============================-->
       <section class="text-center bg-black text-sans-serif" id="quote">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-7">
               <h2 class="text-white">speak to us!</h2>
-              <p class="text-500">We respond to all requests within 48hours. And we are here to help.</p>
-              <p class="text-500">If you prefer to speak with us directly scroll down below the form to see our contact details.</p>
+              <p class="text-500">
+                We are a small team of dedicated professionals and we pride
+                ourselves on responding to all enquiries
+              </p>
+              <p class="text-500">
+                If you prefer to speak with us directly scroll down below the
+                form to see our contact details.
+              </p>
             </div>
           </div>
           <form class="zform text-left mt-6">
             <div class="row justify-content-center">
               <div class="col-lg-5">
-                <input type="hidden" name="to" value="username@domain.extension" />
+                <input
+                  type="hidden"
+                  name="to"
+                  value="username@domain.extension"
+                />
                 <div class="form-group mb-4">
-                  <label class="text-400 font-weight-bold ls fs--1">Your Name</label>
-                  <input class="fs-0 form-control border-800 bg-transparent" type="text" required="required" />
+                  <label class="text-400 font-weight-bold ls fs--1"
+                    >Your Name</label
+                  >
+                  <input
+                    class="fs-0 form-control border-800 bg-transparent"
+                    type="text"
+                    required="required"
+                  />
                 </div>
                 <div class="form-group mb-4">
-                  <label class="text-400 font-weight-bold ls fs--1">Your Email</label>
-                  <input class="fs-0 form-control border-800 bg-transparent" type="email" required="required" />
+                  <label class="text-400 font-weight-bold ls fs--1"
+                    >Your Email</label
+                  >
+                  <input
+                    class="fs-0 form-control border-800 bg-transparent"
+                    type="email"
+                    required="required"
+                  />
                 </div>
                 <div class="form-group mb-4">
-                  <label class="text-400 font-weight-bold ls fs--1">Your Phone</label>
-                  <input class="fs-0 form-control border-800 bg-transparent" type="text" required="required" />
+                  <label class="text-400 font-weight-bold ls fs--1"
+                    >Your Phone</label
+                  >
+                  <input
+                    class="fs-0 form-control border-800 bg-transparent"
+                    type="text"
+                    required="required"
+                  />
                 </div>
                 <div class="form-group mb-4">
-                  <label class="text-400 font-weight-bold ls fs--1">How did you find us?</label>
+                  <label class="text-400 font-weight-bold ls fs--1"
+                    >How did you find us?</label
+                  >
                   <select class="fs-0 form-control border-800 bg-transparent">
                     <option value="1" selected>Word of mouth</option>
                     <option value="2">internet search</option>
                     <option value="3">leaflet</option>
                     <option value="4">NA</option>
-                    </select>
+                  </select>
                 </div>
               </div>
               <div class="col-lg-5">
                 <div class="form-group mb-4">
-                  <label class="text-400 font-weight-bold ls fs--1">Your Organisation</label>
-                  <input class="fs-0 form-control border-800 bg-transparent" type="text" required="required" />
+                  <label class="text-400 font-weight-bold ls fs--1"
+                    >Location</label
+                  ><button
+                    type="button"
+                    class="btn btn-link"
+                    data-toggle="modal"
+                    data-target="#exampleModalLong"
+                  >
+                    how to share my location?
+                  </button>
+                  <input
+                    class="fs-0 form-control border-800 bg-transparent"
+                    type="text"
+                    required="required"
+                  />
                 </div>
                 <div class="form-group mb-4">
-                  <label class="text-400 font-weight-bold ls fs--1">Your Message</label>
-                  <textarea class="fs-0 form-control border-800 bg-transparent" rows="11" required="required"></textarea>
+                  <label class="text-400 font-weight-bold ls fs--1"
+                    >Your Message</label
+                  >
+                  <textarea
+                    class="fs-0 form-control border-800 bg-transparent"
+                    rows="11"
+                    required="required"
+                  ></textarea>
                 </div>
               </div>
               <div class="col-lg-10 text-center">
@@ -389,7 +488,7 @@
         </div>
         <!-- end of .container-->
       </section>
-      <!-- <section> close ============================-->
+      <!-- CONTACT FORM close =========================-->
       <!-- ============================================-->
 
 
@@ -456,17 +555,92 @@
     </footer>
 
     <!--===============================================-->
+    <!--    Modal for directions selection-->
+    <!--===============================================-->
+    <!-- Modal-->
+    <div
+      class="modal fade"
+      id="exampleModalLong"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Location and Access
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Please share both your location and any relevant access details.
+              This includes narrow driveways, gate codes or anything that you
+              feel might interfere with the operation of a large vehicle.
+            </p>
+            <h5>Location</h5>
+            <p>
+              The easiest way to share your location is with a Googles plus
+              code. Simply open
+              <a href="https://plus.codes/map" target="child">this link</a> zoom
+              into and select your location and copy the plus code displayed on
+              the pin. A plus code is simply a more succinct way of displaying
+              latitude and longditude.
+            </p>
+            <h5>Ummm... Im a technophobe</h5>
+            <p>
+              Congratulations on getting this far! Give us accurate, detailed
+              instructions along with your address in the message section below.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--===============================================-->
     <!--    Modal for language selection-->
     <!--===============================================-->
     <!-- Modal-->
-    <div class="modal fade fade-in" id="languageModal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-xs mx-auto" role="document">
+    <div
+      class="modal fade fade-in"
+      id="languageModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-xs mx-auto"
+        role="document"
+      >
         <div class="modal-content bg-black">
           <div class="modal-body text-center p-0">
-            <button class="close text-white position-absolute t-0 r-0 times-icon mt-2 mr-2 p-2" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <button
+              class="close text-white position-absolute t-0 r-0 times-icon mt-2 mr-2 p-2"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
             <ul class="list-unstyled pl-0 my-0 py-4 text-sans-serif">
               <li>
-                <a class="text-white font-weight-bold pt-1 d-block" href="home-default.html">English</a>
+                <a
+                  class="text-white font-weight-bold pt-1 d-block"
+                  href="home-default.html"
+                  >English</a
+                >
               </li>
               <li>
                 <a class="pt-1 d-block text-500" href="#">Português</a>

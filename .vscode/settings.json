@@ -1,0 +1,12 @@
+{
+  "workbench.colorCustomizations": {
+    "highlight-matching-tag.styles": {
+      "opening": {
+        "name": {
+          "underline": "yellow",
+          "highlight": "rgba(255,255,0,0.2)"
+        }
+      }
+    }
+  }
+}
