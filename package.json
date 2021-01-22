@@ -55,6 +55,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^4.0.2",
     "gulp-plumber": "^1.2.0",
+    "gulp-purgecss": "^4.0.0",
     "gulp-rename": "^1.2.3",
     "gulp-replace": "^1.0.0",
     "gulp-rtlcss": "^1.2.0",
