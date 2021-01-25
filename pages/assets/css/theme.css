@@ -5440,6 +5440,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/lato-v17-latin-100.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-100.woff2") format("woff2"), url("../fonts/lato-v17-latin-100.woff") format("woff"), url("../fonts/lato-v17-latin-100.ttf") format("truetype"), url("../fonts/lato-v17-latin-100.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* lato-100italic - latin */
@@ -5451,6 +5452,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/lato-v17-latin-100italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-100italic.woff2") format("woff2"), url("../fonts/lato-v17-latin-100italic.woff") format("woff"), url("../fonts/lato-v17-latin-100italic.ttf") format("truetype"), url("../fonts/lato-v17-latin-100italic.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* lato-300 - latin */
@@ -5462,6 +5464,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/lato-v17-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-300.woff2") format("woff2"), url("../fonts/lato-v17-latin-300.woff") format("woff"), url("../fonts/lato-v17-latin-300.ttf") format("truetype"), url("../fonts/lato-v17-latin-300.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* lato-300italic - latin */
@@ -5473,6 +5476,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/lato-v17-latin-300italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-300italic.woff2") format("woff2"), url("../fonts/lato-v17-latin-300italic.woff") format("woff"), url("../fonts/lato-v17-latin-300italic.ttf") format("truetype"), url("../fonts/lato-v17-latin-300italic.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* lato-regular - latin */
@@ -5484,6 +5488,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/lato-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-regular.woff2") format("woff2"), url("../fonts/lato-v17-latin-regular.woff") format("woff"), url("../fonts/lato-v17-latin-regular.ttf") format("truetype"), url("../fonts/lato-v17-latin-regular.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* lato-italic - latin */
@@ -5495,6 +5500,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/lato-v17-latin-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-italic.woff2") format("woff2"), url("../fonts/lato-v17-latin-italic.woff") format("woff"), url("../fonts/lato-v17-latin-italic.ttf") format("truetype"), url("../fonts/lato-v17-latin-italic.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* lato-700 - latin */
@@ -5506,6 +5512,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/lato-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-700.woff2") format("woff2"), url("../fonts/lato-v17-latin-700.woff") format("woff"), url("../fonts/lato-v17-latin-700.ttf") format("truetype"), url("../fonts/lato-v17-latin-700.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* lato-900 - latin */
@@ -5517,6 +5524,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/lato-v17-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-900.woff2") format("woff2"), url("../fonts/lato-v17-latin-900.woff") format("woff"), url("../fonts/lato-v17-latin-900.ttf") format("truetype"), url("../fonts/lato-v17-latin-900.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* lato-700italic - latin */
@@ -5528,6 +5536,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/lato-v17-latin-700italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-700italic.woff2") format("woff2"), url("../fonts/lato-v17-latin-700italic.woff") format("woff"), url("../fonts/lato-v17-latin-700italic.ttf") format("truetype"), url("../fonts/lato-v17-latin-700italic.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* lato-900italic - latin */
@@ -5539,6 +5548,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/lato-v17-latin-900italic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-v17-latin-900italic.woff2") format("woff2"), url("../fonts/lato-v17-latin-900italic.woff") format("woff"), url("../fonts/lato-v17-latin-900italic.ttf") format("truetype"), url("../fonts/lato-v17-latin-900italic.svg#Lato") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* pt-mono-regular - latin */
@@ -5550,6 +5560,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/pt-mono-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/pt-mono-v8-latin-regular.woff2") format("woff2"), url("../fonts/pt-mono-v8-latin-regular.woff") format("woff"), url("../fonts/pt-mono-v8-latin-regular.ttf") format("truetype"), url("../fonts/pt-mono-v8-latin-regular.svg#PTMono") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* pt-serif-regular - latin */
@@ -5561,6 +5572,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/pt-serif-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/pt-serif-v12-latin-regular.woff2") format("woff2"), url("../fonts/pt-serif-v12-latin-regular.woff") format("woff"), url("../fonts/pt-serif-v12-latin-regular.ttf") format("truetype"), url("../fonts/pt-serif-v12-latin-regular.svg#PTSerif") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /* pt-serif-italic - latin */
@@ -5572,6 +5584,7 @@ a.text-white:hover, a.text-white:focus {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/pt-serif-v12-latin-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/pt-serif-v12-latin-italic.woff2") format("woff2"), url("../fonts/pt-serif-v12-latin-italic.woff") format("woff"), url("../fonts/pt-serif-v12-latin-italic.ttf") format("truetype"), url("../fonts/pt-serif-v12-latin-italic.svg#PTSerif") format("svg");
   /* Legacy iOS */
+  font-display: swap;
 }
 
 /*# sourceMappingURL=theme.css.map */
