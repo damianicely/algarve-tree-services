@@ -2654,6 +2654,12 @@ button.bg-black:focus {
   min-height: 100vh;
 }
 
+@media (min-width: 992px) {
+  .min-vh-lg-100 {
+    min-height: 100vh;
+  }
+}
+
 /*-----------------------------------------------
 |   Font family, Position and Overflow [NTR]
 -----------------------------------------------*/
