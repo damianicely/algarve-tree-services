@@ -462,7 +462,7 @@ pre code {
 }
 
  .col-6, .col-11, .col-12, .col,
-.col-auto, .col-sm-6, .col-sm-10, .col-md-3, .col-md-4, .col-md-6, .col-md-7, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-9, .col-lg-10, .col-xl-6 {
+.col-auto, .col-sm-6, .col-sm-10, .col-md-3, .col-md-4, .col-md-6, .col-md-7, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-9, .col-lg-10, .col-xl-6, .col-xl-9 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -605,6 +605,12 @@ pre code {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .col-xl-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
   }
 }
 
@@ -2020,6 +2026,10 @@ button.bg-dark:focus {
   background-color: #030303 !important;
 }
 
+.bg-white {
+  background-color: #fff !important;
+}
+
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -2236,8 +2246,14 @@ button.bg-dark:focus {
   margin-bottom: 3rem !important;
 }
 
-.mt-6 {
+.mt-6,
+.my-6 {
   margin-top: 4rem !important;
+}
+
+
+.my-6 {
+  margin-bottom: 4rem !important;
 }
 
 .mt-8 {
@@ -2274,6 +2290,10 @@ button.bg-dark:focus {
 
 .p-2 {
   padding: 0.5rem !important;
+}
+
+.pl-2 {
+  padding-left: 0.5rem !important;
 }
 
 .p-3 {
@@ -2320,7 +2340,7 @@ button.bg-dark:focus {
   padding-top: 3rem !important;
 }
 
-
+.pt-6,
 .py-6 {
   padding-top: 4rem !important;
 }
@@ -2371,6 +2391,14 @@ button.bg-dark:focus {
     margin-bottom: 5rem !important;
   }
   
+  .px-md-5 {
+    padding-right: 3rem !important;
+  }
+  
+  .px-md-5 {
+    padding-left: 3rem !important;
+  }
+  
   .py-md-7 {
     padding-top: 5rem !important;
   }
@@ -2403,11 +2431,27 @@ button.bg-dark:focus {
     padding-top: 0 !important;
   }
   
+  .px-lg-0 {
+    padding-right: 0 !important;
+  }
+  
   .py-lg-0 {
     padding-bottom: 0 !important;
   }
+  
+  .px-lg-0 {
+    padding-left: 0 !important;
+  }
+  
+  .py-lg-4 {
+    padding-top: 1.8rem !important;
+  }
   .pr-lg-4 {
     padding-right: 1.8rem !important;
+  }
+  
+  .py-lg-4 {
+    padding-bottom: 1.8rem !important;
   }
   .pr-lg-5,
   .px-lg-5 {
@@ -2417,8 +2461,13 @@ button.bg-dark:focus {
   .px-lg-5 {
     padding-left: 3rem !important;
   }
-  .pr-lg-6 {
+  .pr-lg-6,
+  .px-lg-6 {
     padding-right: 4rem !important;
+  }
+  
+  .px-lg-6 {
+    padding-left: 4rem !important;
   }
   
   .py-lg-7 {
@@ -2442,6 +2491,14 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 1200px) {
+  
+  .py-xl-6 {
+    padding-top: 4rem !important;
+  }
+  
+  .py-xl-6 {
+    padding-bottom: 4rem !important;
+  }
   .pt-xl-7 {
     padding-top: 5rem !important;
   }
@@ -3996,6 +4053,16 @@ label,
 |   Background Colors [Grays]
 -----------------------------------------------*/
 
+.bg-200 {
+  background-color: #f2f2f2 !important;
+}
+
+a.bg-200:hover, a.bg-200:focus,
+button.bg-200:hover,
+button.bg-200:focus {
+  background-color: #d9d9d9 !important;
+}
+
 .bg-black {
   background-color: #000 !important;
 }
@@ -4004,6 +4071,16 @@ a.bg-black:hover, a.bg-black:focus,
 button.bg-black:hover,
 button.bg-black:focus {
   background-color: black !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+a.bg-white:hover, a.bg-white:focus,
+button.bg-white:hover,
+button.bg-white:focus {
+  background-color: #e6e6e6 !important;
 }
 
 /*---------------------------------------------------------------
@@ -4029,6 +4106,10 @@ button.bg-black:focus {
     ---------------------------------------------------------------*/
 .rounded {
   border-radius: 0.1875rem !important;
+}
+
+.rounded-capsule {
+  border-radius: 3.125rem !important;
 }
 
 @media (min-width: 576px) {
@@ -4117,9 +4198,16 @@ button.bg-black:focus {
   min-height: 100vh;
 }
 
+.vh-50 {
+  height: 50vh;
+}
+
 @media (min-width: 992px) {
   .min-vh-lg-100 {
     min-height: 100vh;
+  }
+  .vh-lg-100 {
+    height: 100vh;
   }
 }
 
