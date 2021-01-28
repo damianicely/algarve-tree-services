@@ -25,12 +25,15 @@
     <!-- ===============================================-->
     <!--    Fonts-->
     <!-- ===============================================-->
-    <link rel="preload" href="fonts/pt-serif-v12-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/lato-v17-latin-300.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/pt-serif-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/lato-v17-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/lato-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/lato-v17-latin-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/pt-serif-v12-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/lato-v17-latin-300.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/pt-serif-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/lato-v17-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/lato-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/lato-v17-latin-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="assets/img/damian/gallery/Chip2.jpg">
+    <link rel="preload" as="image" href="assets/img/headers/axe.jpg">
+    <link rel="preload" as="image" href="assets/img/logo/blacklogo.png">
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
@@ -95,6 +98,10 @@
         >
           <a
             class="fancynavbar-addon-item"
+            href="tel:+351-917479921"
+            ><span class="fas fa-phone"></span
+          >          </a><a
+            class="fancynavbar-addon-item"
             href="https://www.facebook.com/algarvetreeservices"
             ><span class="fab fa-facebook"></span
           ></a>
@@ -110,28 +117,10 @@
       </div>
       <div class="fancynavbar-collapse">
         <ul class="fancynavbar-nav">
-          <li class="fancynav-item fancy-dropdown">
-            <a
-              class="fancynav-link fancy-dropdown-toggle"
-              href="JavaScript:void(0)"
-            >
-              <span class="fancynav-link-content">homes</span>
+          <li class="fancynav-item">
+            <a class="fancynav-link" href="index.html">
+              <span class="fancynav-link-content">home</span>
             </a>
-            <div class="fancy-dropdown-menu">
-              <div class="row pb-4 pt-3">
-                <div class="col-auto">
-                  <a class="fancy-dropdown-item" href="index.html">
-                    orange menu
-                  </a>
-                  <a class="fancy-dropdown-item" href="index2.html">
-                    black menu
-                  </a>
-                  <a class="fancy-dropdown-item" href="index3.html">
-                    carousel landing
-                  </a>
-                </div>
-              </div>
-            </div>
           </li>
           <li class="fancynav-item">
             <a class="fancynav-link" href="services.html">
@@ -716,7 +705,6 @@
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
-    <script src="assets/lib/owl.carousel/owl.carousel.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
