@@ -536,7 +536,7 @@
                     >Location</label
                   ><button
                     type="button"
-                    class="btn btn-link"
+                    class="btn btn-link text-white"
                     data-toggle="modal"
                     data-target="#exampleModalLong"
                   >
